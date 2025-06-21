@@ -51,3 +51,20 @@
   password  :123@123///////?
 ###  Expected Result  :
   Show error message "Invalid Credentials"
+
+
+
+
+
+#  Test Case ID  :  TC_LOGIN_05
+#  Description  :  Account locked due tried invalid 3 attempts
+##  Preconditions  :  User account is active
+###  Steps  :  
+ 1. Enter wrong password 3 times consecutively
+###  Test Data  :
+  Valid username: testuser123
+  password  :123@123//
+  password  :123@123'[
+  password  :123@123?
+###  Expected Result  :
+  Show error message "Account locked due to invalid 3 attempts"
