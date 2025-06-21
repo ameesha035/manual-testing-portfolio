@@ -1,0 +1,12 @@
+#  Test Case ID  :  TC_LOGIN_01	
+#  Description  :  Login with valid credentials
+##  Preconditions  :  User account is active
+###  Steps  :  
+  1. Open login page 
+  2. Enter valid username and password 
+  3. Click Login
+###  Test Data  :
+  Valid username: testuser123
+  password  :123@123
+###  Expected Result  :
+  User is logged in successfully
