@@ -1,2 +1,3 @@
 # manual-testing-portfolio
-My sample test cases, bug reports, and test plans
+ Welcome ! My sample test cases, bug reports, and test plans
+ 
