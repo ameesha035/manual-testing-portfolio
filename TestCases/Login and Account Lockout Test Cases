@@ -39,4 +39,15 @@
   Show error message "Invalid Credentials"
 
 
-
+#  Test Case ID  :  TC_LOGIN_04
+#  Description  :  Login with invalid credentials
+##  Preconditions  :  User account is active
+###  Steps  :  
+  1. Open login page 
+  2. Enter invalid username and invalid password 
+  3. Click Login
+###  Test Data  :
+  Valid username: testuser123&*
+  password  :123@123///////?
+###  Expected Result  :
+  Show error message "Invalid Credentials"
