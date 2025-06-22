@@ -34,7 +34,7 @@ Fail(To be filled after execution)
 
 
 
-#  Test Case ID  :  TC_LOGIN_02
+#  Test Case ID  :  TC_LOGIN_03
 #  Description  :  Login with invalid password
 ##  Preconditions  :  User account is active
 ###  Steps  :  
@@ -46,6 +46,10 @@ Fail(To be filled after execution)
   password  :123@123///////?
 ###  Expected Result  :
   Show error message "Invalid Credentials"
+### Actual Result
+  Show error message "Invalid Credentials"
+### Status
+Pass(To be filled after execution)
 
 
 
