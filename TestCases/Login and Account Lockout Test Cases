@@ -10,6 +10,12 @@
   password  :123@123
 ###  Expected Result  :
   User is logged in successfully
+### Actual Result
+  user is logged in successfully
+### Status
+Pass(To be filled after execution)
+
+
 
 #  Test Case ID  :  TC_LOGIN_02
 #  Description  :  Login with invalid password
