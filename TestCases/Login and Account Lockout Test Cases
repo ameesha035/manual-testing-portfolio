@@ -68,3 +68,20 @@
   password  :123@123?
 ###  Expected Result  :
   Show error message "Account locked due to invalid 3 attempts"
+
+
+#  Test Case ID  :  TC_LOGIN_06
+#  Description  :  user tried to login empty credentials
+##  Preconditions  : none
+###  Steps  :  
+ 1.enter login page
+ 2.no any enter credentials
+ 3.click login button
+###  Test Data  :
+  Valid username: none
+  password  :none
+###  Expected Result  :
+  Show error message "should enter username and password credentials"
+
+
+
