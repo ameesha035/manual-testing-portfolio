@@ -51,6 +51,25 @@ Fail(To be filled after execution)
 ### Status
 Pass(To be filled after execution)
 
+#  Test Case ID  :  TC_LOGIN_04
+#  Description  :  Login with invalid password
+##  Preconditions  :  User account is active
+###  Steps  :  
+  1. Open login page 
+  2. Enter valid username and invalid password 
+  3. Click Login
+###  Test Data  :
+  Valid username: testuser123
+  password  :123@123///////?
+###  Expected Result  :
+  Show error message "Invalid Credentials"
+### Actual Result
+  Show  message "login successfully"
+### Status
+Fail(To be filled after execution)
+
+
+
 
 
 #  Test Case ID  :  TC_LOGIN_03
