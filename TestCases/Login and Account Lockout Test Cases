@@ -72,7 +72,7 @@ Fail(To be filled after execution)
 
 
 
-#  Test Case ID  :  TC_LOGIN_03
+#  Test Case ID  :  TC_LOGIN_05
 #  Description  :  Login with invalid username
 ##  Preconditions  :  User account is active
 ###  Steps  :  
@@ -84,9 +84,15 @@ Fail(To be filled after execution)
   password  :123@123?
 ###  Expected Result  :
   Show error message "Invalid Credentials"
+### Actual Result
+  Show error message "Invalid Credentials"
+### Status
+Pass(To be filled after execution)
 
 
-#  Test Case ID  :  TC_LOGIN_04
+
+
+#  Test Case ID  :  TC_LOGIN_06
 #  Description  :  Login with invalid credentials
 ##  Preconditions  :  User account is active
 ###  Steps  :  
@@ -98,12 +104,17 @@ Fail(To be filled after execution)
   password  :123@123///////?
 ###  Expected Result  :
   Show error message "Invalid Credentials"
+### Actual Result
+  Show  message "login successfully"
+### Status
+Fail(To be filled after execution)
 
 
 
 
 
-#  Test Case ID  :  TC_LOGIN_05
+
+#  Test Case ID  :  TC_LOGIN_07
 #  Description  :  Account locked due tried invalid 3 attempts
 ##  Preconditions  :  User account is active
 ###  Steps  :  
@@ -115,9 +126,31 @@ Fail(To be filled after execution)
   password  :123@123?
 ###  Expected Result  :
   Show error message "Account locked due to invalid 3 attempts"
+### Actual Result
+  Show error message "Account locked due to invalid 3 attempts"
+### Status
+Pass(To be filled after execution)
+
+#  Test Case ID  :  TC_LOGIN_08
+#  Description  :  Account locked due tried invalid 3 attempts
+##  Preconditions  :  User account is active
+###  Steps  :  
+ 1. Enter wrong password 3 times consecutively
+###  Test Data  :
+  Valid username: testuser123
+  password  :123@123//
+  password  :123@123'[
+  password  :123@123?
+###  Expected Result  :
+  Show error message "Account locked due to invalid 3 attempts"
+### Actual Result
+  Show  message "successfully logged"
+### Status
+Fail(To be filled after execution)
 
 
-#  Test Case ID  :  TC_LOGIN_06
+
+#  Test Case ID  :  TC_LOGIN_09
 #  Description  :  user tried to login empty credentials
 ##  Preconditions  : none
 ###  Steps  :  
@@ -129,9 +162,30 @@ Fail(To be filled after execution)
   password  :none
 ###  Expected Result  :
   Show error message "should enter username and password credentials"
+### Actual Result
+  Show error message "Account locked due to invalid 3 attempts"
+### Status
+Pass(To be filled after execution)
+
+#  Test Case ID  :  TC_LOGIN_09
+#  Description  :  user tried to login empty credentials
+##  Preconditions  : none
+###  Steps  :  
+ 1.enter login page
+ 2.no any enter credentials
+ 3.click login button
+###  Test Data  :
+  Valid username: none
+  password  :none
+###  Expected Result  :
+  Show error message "should enter username and password credentials"
+### Actual Result
+  Show error message "successfuly logged"
+### Status
+fail(To be filled after execution)
 
 
-#  Test Case ID  :  TC_LOGIN_07
+#  Test Case ID  :  TC_LOGIN_10
 #  Description  :  user tried to login with forgot password option
 ##  Preconditions  : user must be active
 ###  Steps  :  
@@ -140,7 +194,28 @@ Fail(To be filled after execution)
  3.click forgot password  button
 ###  Test Data  :
   Valid username: examplae@user.com
-  
 ###  Expected Result  :
   Show error message "password reset information sent to the email "
+### Actual Result
+  Show error message "password reset information sent to the email "
+### Status
+Pass(To be filled after execution)
+
+#  Test Case ID  :  TC_LOGIN_11
+#  Description  :  user tried to login with forgot password option
+##  Preconditions  : user must be active
+###  Steps  :  
+ 1.enter login page
+ 2.enter user name 
+ 3.click forgot password  button
+###  Test Data  :
+  Valid username: examplae@user.com
+###  Expected Result  :
+  Show error message "password reset information sent to the email "
+### Actual Result
+  Show  message "successfully login "
+### Status
+Fail(To be filled after execution)
+
+
 
