@@ -84,4 +84,16 @@
   Show error message "should enter username and password credentials"
 
 
+#  Test Case ID  :  TC_LOGIN_07
+#  Description  :  user tried to login with forgot password option
+##  Preconditions  : user must be active
+###  Steps  :  
+ 1.enter login page
+ 2.enter user name 
+ 3.click forgot password  button
+###  Test Data  :
+  Valid username: examplae@user.com
+  
+###  Expected Result  :
+  Show error message "password reset information sent to the email "
 
